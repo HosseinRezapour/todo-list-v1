@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+
+  font-family: "myIranSans";
+  src: url("/font/IranSans.woff2");
+}
+
+* {
+  /* box-sizing: border-box; */
+  /* margin: 0; */
+  /* padding: 0; */
+  direction: rtl;
+  font-family: myIranSans, Tahoma;
+}
