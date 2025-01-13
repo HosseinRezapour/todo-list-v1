@@ -1,7 +1,7 @@
 import axios from "axios";
-import react, { useContext, useState } from "react";
-import { TodoContext } from './todo-context';
-import { message, notification } from "antd/es";
+import { useContext, useState } from "react";
+import { TodoContext } from "./todo-context";
+import { notification } from "antd/es";
 
 const TodoAdd = () => {
 
@@ -13,14 +13,14 @@ const TodoAdd = () => {
     const submitHandler = () => {
         event.preventDefault();
 
-        axios.post('/api/todo', form)
+        axios.post("/api/todo", form)
             .then((res) => {
                 setForm(defaultForm);
 
-                api['success']({
-                    message: 'تبریک', duration: 1.4, pauseOnHover: false, showProgress: true,
+                api["success"]({
+                    message: "تبریک", duration: 1.4, pauseOnHover: false, showProgress: true,
                     description:
-                        'اطلاعات با موفقیت درج شد',
+                        "اطلاعات با موفقیت درج شد",
                 });
 
 
@@ -34,9 +34,9 @@ const TodoAdd = () => {
     }
 
     // const { refetch } = useQuery({
-    //     queryKey: ['todoList'],
+    //     queryKey: ["todoList"],
     //     queryFn: async () => {
-    //         const response = await fetch('/api/todo',)
+    //         const response = await fetch("/api/todo",)
 
     //         return await response.json()
     //     },

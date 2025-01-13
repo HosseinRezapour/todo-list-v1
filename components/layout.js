@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Profile from "./profile";
 
 const Layout = ({ children }) => {

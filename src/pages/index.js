@@ -6,13 +6,10 @@ export default function Home() {
 
 
   return (
-    <div className='container  mx-auto mt-20 max-w-screen-sm
-
-    '>
+    <div className="container  mx-auto mt-20 max-w-screen-sm">
       <div>
         <TodoProvider>
           <TodoAdd />
-
           <TodoList />
         </TodoProvider>
       </div>
